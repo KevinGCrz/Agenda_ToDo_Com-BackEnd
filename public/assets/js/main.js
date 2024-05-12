@@ -53,7 +53,7 @@ function mountTask(task) {
     
     checkboxEl.type = 'checkbox';
     checkboxEl.id = 'task-' + task.id;
-    checkboxEl.className = 'task-checkbox';
+    checkboxEl.className = 'task-checkbox'; 
     checkboxEl.checked = task.checked;
     checkboxEl.addEventListener('change', () => {
         updateTask(task.id, task.name, checkboxEl.checked);
